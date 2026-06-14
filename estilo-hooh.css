@@ -128,6 +128,27 @@
         .nav-link i {
             margin-right: 10px;
         }
+/* nav link2 */
+.nav-link2 {
+            display: block;
+            padding: 20px;
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link2:hover, .nav-link.active {
+            color: var(--primary);
+            border-bottom: 3px solid var(--primary);
+            background-color: rgba(228, 77, 38, 0.05);
+        }
+        
+        .nav-link2 i {
+            margin-right: 10px;
+        }
+        
         
         /* Contenido principal */
         .section {
