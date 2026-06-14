@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guía Completa - Ho-Oh en Torre Campana</title>
+    <link rel="stylesheet" href="estilo-hooh.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <i class="fas fa-fire-alt"></i>
+          <div>
+            <h1>Guía Completa de Ho-Oh</h1>
+            <p class="subtitle">
+              Batalla de 10 turnos en la Torre Campana de Ciudad Iris, Johto
+            </p>
+          </div>
+          <i class="fas fa-feather-alt"></i>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#faq" class="nav-link active" data-section="faq">
+              <i class="fas fa-question-circle"></i> Preguntas Frecuentes
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#pokemon" class="nav-link" data-section="pokemon">
+              <i class="fas fa-paw"></i> Pokémon y Objetos
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#battle" class="nav-link" data-section="battle">
+              <i class="fas fa-trophy"></i> Guía de Batalla
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#notes" class="nav-link" data-section="notes">
+              <i class="fas fa-exclamation-triangle"></i> Notas Importantes
+            </a>
+          </li>
+          <li>
+            <!-- Al principio del body, después del header o donde prefieras -->
+            <a
+              href="index.html"
+              class="inline-block mb-4 text-poke-red hover:underline"
+              >← Volver a la calculadora de cultivos</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Sección de Preguntas Frecuentes -->
+      <input type="checkbox" id="toggle-faq" class="toggle-section" />
+      <label for="toggle-faq" class="toggle-label">
+        <i class="fas fa-question-circle"></i> Preguntas Frecuentes
+      </label>
+      <section id="faq" class="section active">
+        <h2 class="section-title">
+          <i class="fas fa-question-circle"></i> Preguntas Frecuentes (FAQ)
+        </h2>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <i class="fas fa-clock"></i> ¿Cuál es el tiempo de espera para la
+            revancha contra Ho-Oh?
+          </div>
+          <div class="faq-answer">7 días desde la última batalla.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <i class="fas fa-gift"></i> ¿Obtengo algún premio por derrotarlo?
+          </div>
+          <div class="faq-answer">
+            Sí, recibirás <strong>Señuelo (Legendario) x3</strong> y
+            <strong>Pluma Arcoíris x10</strong>.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <i class="fas fa-info-circle"></i> ¿Puedo ver cuánto tiempo falta
+            para poder luchar de nuevo?
+          </div>
+          <div class="faq-answer">
+            Sí, puedes verlo en
+            <strong>Menú > Información de Instancia</strong>.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <i class="fas fa-map-marker-alt"></i> ¿Dónde puedo encontrar a Ho-Oh
+            para la revancha?
+          </div>
+          <div class="faq-answer">
+            En <strong>Ciudad Iris, en la Torre Campana de Johto</strong>.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <i class="fas fa-tools"></i> ¿Necesito algún objeto especial para
+            esta batalla?
+          </div>
+          <div class="faq-answer">
+            No se necesitan objetos consumibles durante la batalla. Solo los
+            objetos equipados que se especifican para cada Pokémon.
+            Opcionalmente, puedes usar un <strong>Repelente Máximo</strong> para
+            llegar sin interrupciones.
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de Pokémon y Objetos -->
+      <input type="checkbox" id="toggle-pokemon" class="toggle-section" />
+      <label for="toggle-pokemon" class="toggle-label">
+        <i class="fas fa-paw"></i> Pokémon y Objetos
+      </label>
+      <section id="pokemon" class="section">
+        <h2 class="section-title">
+          <i class="fas fa-paw"></i> Pokémon y Objetos Requeridos
+        </h2>
+        <p>
+          <strong>Nota importante:</strong> El orden del equipo debe ser
+          exactamente:
+          <span class="pokemon-indicator" style="background-color: var(--ghost)"
+            >Chandelure</span
+          >
+          →
+          <span class="pokemon-indicator" style="background-color: var(--fire)"
+            >Rotom-Calor</span
+          >
+          →
+          <span class="pokemon-indicator" style="background-color: var(--rock)"
+            >Lunatone</span
+          >. Chandelure debe ser el más rápido y Lunatone el más lento.
+        </p>
+
+        <div class="pokemon-grid">
+          <!-- Chandelure -->
+          <div class="pokemon-card">
+            <div
+              class="pokemon-header"
+              style="
+                background-color: var(--ghost);
+                border-top-color: var(--ghost);
+              "
+            >
+              <div class="pokemon-name">Chandelure</div>
+              <div class="pokemon-type">Fantasma/Fuego</div>
+            </div>
+            <div class="pokemon-body">
+              <div class="pokemon-item">
+                <div class="item-icon" style="background-color: var(--ghost)">
+                  <i class="fas fa-hat-wizard"></i>
+                </div>
+                <div>
+                  <div class="item-name">Objeto: Hechizo</div>
+                  <div>Aumenta el poder de movimientos de tipo Fantasma</div>
+                </div>
+              </div>
+
+              <div class="pokemon-item">
+                <div class="item-icon" style="background-color: #27ae60">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <div>
+                  <div class="item-name">Naturaleza: Modesta</div>
+                  <div>Aumenta Ataque Especial, disminuye Ataque</div>
+                </div>
+              </div>
+
+              <h4>EVs / IVs:</h4>
+              <table class="stats-table">
+                <tr>
+                  <th>Estadística</th>
+                  <th>IVs</th>
+                  <th>EVs</th>
+                </tr>
+                <tr>
+                  <td>PS</td>
+                  <td>25+</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>Defensa</td>
+                  <td>25+</td>
+                  <td>252</td>
+                </tr>
+                <tr>
+                  <td>Ataque Especial</td>
+                  <td>31</td>
+                  <td>58</td>
+                </tr>
+                <tr>
+                  <td>Defensa Especial</td>
+                  <td>25+</td>
+                  <td>200</td>
+                </tr>
+                <tr>
+                  <td>Velocidad</td>
+                  <td>31</td>
+                  <td>-</td>
+                </tr>
+              </table>
+
+              <h4 style="margin-top: 20px">Movimientos:</h4>
+              <div class="pokemon-moves">
+                <div class="move move-type-psychic">Velo Sagrado</div>
+                <div class="move move-type-ghost">Bola Sombra</div>
+                <div class="move move-type-psychic">Protección</div>
+                <div class="move move-type-psychic">Más Psique</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Rotom-Calor -->
+          <div class="pokemon-card">
+            <div
+              class="pokemon-header"
+              style="
+                background-color: var(--fire);
+                border-top-color: var(--fire);
+              "
+            >
+              <div class="pokemon-name">Rotom-Calor</div>
+              <div class="pokemon-type">Eléctrico/Fuego</div>
+            </div>
+            <div class="pokemon-body">
+              <div class="pokemon-item">
+                <div class="item-icon" style="background-color: var(--fire)">
+                  <i class="fas fa-mountain"></i>
+                </div>
+                <div>
+                  <div class="item-name">Objeto: Arena Fina</div>
+                  <div>Aumenta el poder de movimientos de tipo Tierra</div>
+                </div>
+              </div>
+
+              <div class="pokemon-item">
+                <div class="item-icon" style="background-color: #27ae60">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <div>
+                  <div class="item-name">Naturaleza: Quieta</div>
+                  <div>Aumenta Ataque Especial, disminuye Velocidad</div>
+                </div>
+              </div>
+
+              <h4>EVs / IVs:</h4>
+              <table class="stats-table">
+                <tr>
+                  <th>Estadística</th>
+                  <th>IVs</th>
+                  <th>EVs</th>
+                </tr>
+                <tr>
+                  <td>PS</td>
+                  <td>25+</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td>Defensa</td>
+                  <td>25+</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>Ataque Especial</td>
+                  <td>31</td>
+                  <td>252</td>
+                </tr>
+                <tr>
+                  <td>Defensa Especial</td>
+                  <td>25+</td>
+                  <td>252</td>
+                </tr>
+                <tr>
+                  <td>Velocidad</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+              </table>
+
+              <h4 style="margin-top: 20px">Movimientos:</h4>
+              <div class="pokemon-moves">
+                <div class="move move-type-fire">Poder Oculto (Tierra)</div>
+                <div class="move move-type-electric">Rayo</div>
+                <div class="move move-type-psychic">Pantalla de Luz</div>
+                <div class="move move-type-psychic">Maquinación</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lunatone -->
+          <div class="pokemon-card">
+            <div
+              class="pokemon-header"
+              style="
+                background-color: var(--rock);
+                border-top-color: var(--rock);
+              "
+            >
+              <div class="pokemon-name">Lunatone</div>
+              <div class="pokemon-type">Roca/Psíquico</div>
+            </div>
+            <div class="pokemon-body">
+              <div class="pokemon-item">
+                <div class="item-icon" style="background-color: var(--rock)">
+                  <i class="fas fa-gem"></i>
+                </div>
+                <div>
+                  <div class="item-name">Objeto: Piedra Dura</div>
+                  <div>Aumenta el poder de movimientos de tipo Roca</div>
+                </div>
+              </div>
+
+              <div class="pokemon-item">
+                <div class="item-icon" style="background-color: #27ae60">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <div>
+                  <div class="item-name">Naturaleza: Quieta</div>
+                  <div>Aumenta Ataque Especial, disminuye Velocidad</div>
+                </div>
+              </div>
+
+              <h4>EVs / IVs:</h4>
+              <table class="stats-table">
+                <tr>
+                  <th>Estadística</th>
+                  <th>IVs</th>
+                  <th>EVs</th>
+                </tr>
+                <tr>
+                  <td>PS</td>
+                  <td>25+</td>
+                  <td>92</td>
+                </tr>
+                <tr>
+                  <td>Defensa</td>
+                  <td>25+</td>
+                  <td>252</td>
+                </tr>
+                <tr>
+                  <td>Ataque Especial</td>
+                  <td>31</td>
+                  <td>166</td>
+                </tr>
+                <tr>
+                  <td>Defensa Especial</td>
+                  <td>25+</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>Velocidad</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+              </table>
+
+              <h4 style="margin-top: 20px">Movimientos:</h4>
+              <div class="pokemon-moves">
+                <div class="move move-type-psychic">Espacio Raro</div>
+                <div class="move move-type-rock">Joya de Luz</div>
+                <div class="move move-type-psychic">Protección</div>
+                <div class="move move-type-psychic">Más Psique</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de Guía de Batalla -->
+      <input type="checkbox" id="toggle-battle" class="toggle-section" />
+      <label for="toggle-battle" class="toggle-label">
+        <i class="fas fa-trophy"></i> Guía de Batalla
+      </label>
+      <section id="battle" class="section">
+        <h2 class="section-title">
+          <i class="fas fa-trophy"></i> Guía Paso a Paso de la Batalla
+        </h2>
+        <p>
+          La batalla contra Ho-Oh sigue un guión exacto de
+          <strong>10 turnos</strong>. Sigue estas instrucciones cuidadosamente
+          para tener éxito.
+        </p>
+
+        <div class="turns-container" id="turns-container">
+          <!-- Los turnos se generarán con JavaScript -->
+        </div>
+      </section>
+
+      <!-- Sección de Notas Importantes -->
+      <input type="checkbox" id="toggle-notes" class="toggle-section" />
+      <label for="toggle-notes" class="toggle-label">
+        <i class="fas fa-exclamation-triangle"></i> Notas Importantes
+      </label>
+      <section id="notes" class="section">
+        <h2 class="section-title">
+          <i class="fas fa-exclamation-triangle"></i> Notas Importantes
+        </h2>
+
+        <div class="important-notes">
+          <div class="note-item">
+            <i class="fas fa-exclamation-circle"></i>
+            <div>
+              <strong>Orden del equipo:</strong> Debes empezar con solo los 3
+              Pokémon requeridos en tu equipo y en el siguiente orden exacto:
+              <span
+                class="pokemon-indicator"
+                style="background-color: var(--ghost)"
+                >Chandelure</span
+              >,
+              <span
+                class="pokemon-indicator"
+                style="background-color: var(--fire)"
+                >Rotom-Calor</span
+              >,
+              <span
+                class="pokemon-indicator"
+                style="background-color: var(--rock)"
+                >Lunatone</span
+              >.
+            </div>
+          </div>
+
+          <div class="note-item">
+            <i class="fas fa-exclamation-circle"></i>
+            <div>
+              <strong>Bestias Legendarias:</strong> Cuando la guía dice "Mata a
+              la bestia legendaria":
+              <ul style="margin-left: 20px; margin-top: 5px">
+                <li>
+                  Contra <strong>Entei</strong> o <strong>Raikou</strong>: usa
+                  <strong>Poder Oculto</strong> (de Rotom).
+                </li>
+                <li>
+                  Contra <strong>Suicune</strong>: usa <strong>Rayo</strong> (de
+                  Rotom).
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="note-item">
+            <i class="fas fa-exclamation-circle"></i>
+            <div>
+              <strong>Turno 6 - ¡Sin críticos!</strong> En el
+              <strong>Turno 6</strong>, el ataque de Lunatone
+              <strong>NO</strong> debe ser un golpe crítico. Si Lunatone hace
+              crítico, Ho-Oh morirá prematuramente y arruinará la estrategia.
+            </div>
+          </div>
+
+          <div class="note-item">
+            <i class="fas fa-exclamation-circle"></i>
+            <div>
+              <strong>Turno 9 - Bajas esperadas:</strong> Al final del
+              <strong>Turno 9</strong>, Ho-Oh usualmente debilita a uno de tus
+              Pokémon. Esto es normal y no afecta el resultado. Simplemente
+              termina la batalla con los dos Pokémon que queden.
+            </div>
+          </div>
+
+          <div class="note-item">
+            <i class="fas fa-exclamation-circle"></i>
+            <div>
+              <strong>Copiar estadísticas:</strong> Cuando uses
+              <strong>Más Psique</strong> (en Turnos 3 y 8), asegúrate de
+              seleccionar a <strong>Rotom</strong> como objetivo para copiar sus
+              estadísticas aumentadas por Maquinación.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p>
+          Guía para Pokémon Universe • Batalla contra Ho-Oh en Torre Campana
+        </p>
+        <p>Recuerda: El cooldown es de 7 días. ¡Buena suerte en tu batalla!</p>
+      </footer>
+    </div>
+
+    <script src="script-hooh.js"></script>
+  </body>
+</html>

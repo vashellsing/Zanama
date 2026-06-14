@@ -991,6 +991,15 @@ const App = () => {
               <IconCalculator /> Calculadora de Semillas
             </div>
           </button>
+
+          <button
+            onClick={() => (window.location.href = "Guia HO-OH.html")}
+            className="px-6 py-3 font-bold text-sm rounded-t-lg transition-colors whitespace-nowrap bg-white text-gray-500 hover:bg-gray-100"
+          >
+            <div className="flex items-center gap-2">
+              <i className="fas fa-feather-alt"></i> Guía Ho-Oh
+            </div>
+          </button>
         </div>
       </div>
 
