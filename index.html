@@ -90,16 +90,19 @@
       const { useState, useEffect } = React;
 
       // --- FIREBASE INIT ---
-      const firebaseConfigStr =
-        typeof __firebase_config !== "undefined" ? __firebase_config : null;
-      let app, auth, db, appId;
-      if (firebaseConfigStr) {
-        const firebaseConfig = JSON.parse(firebaseConfigStr);
-        app = initializeApp(firebaseConfig);
-        auth = getAuth(app);
-        db = getFirestore(app);
-        appId = typeof __app_id !== "undefined" ? __app_id : "default-app-id";
-      }
+      const firebaseConfig = {
+        apiKey: "AIzaSyAyf8ROPQy9IUJhDanOVg3PQpFRAXRgmQ8",
+        authDomain: "zanama-fb506.firebaseapp.com",
+        projectId: "zanama-fb506",
+        storageBucket: "zanama-fb506.firebasestorage.app",
+        messagingSenderId: "107245182200",
+        appId: "1:107245182200:web:93adfacb67530ef38eaf0d",
+      };
+
+      const app = initializeApp(firebaseConfig);
+      const auth = getAuth(app);
+      const db = getFirestore(app);
+      const appId = "zanama-app-v1";
 
       // --- ICONOS SVG ---
       const IconLeaf = () => (
